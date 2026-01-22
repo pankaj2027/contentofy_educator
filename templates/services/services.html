@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<section class="section bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">What We Offer</h2>
+      <div class="row g-4">
+        {% for s in services %}
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm border-0 animate delay-1">
+            <div class="card-body">
+              <h5 class="fw-bold">{{ s.title }}</h5>
+              <p class="text-muted mt-2">
+                {{ s.description }}
+              </p>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+</section>
+<!-- <section class="container py-5">
+  <h2 class="text-center mb-4">Our Services</h2> -->
+
+  <!-- {% for s in services %}
+    <div class="card mb-3">
+      <div class="card-body">
+        <h5 class="card-title">{{ s.title }}</h5>
+        <p class="card-text">{{ s.description }}</p>
+      </div>
+    </div>
+  {% empty %}
+    <p class="text-center text-muted">Services will be listed here.</p>
+  {% endfor %}
+</section> -->
+
+{% endblock %}
+
+

@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<!-- Page Header -->
+<section class="page-hero bg-light border-bottom">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-9 text-center">
+        <!-- <span class="badge badge-accent mb-3">Contentofy</span> -->
+        <h1 class="fw-bold mt-2">{{ page.title }}</h1>
+        <p class="text-muted mt-2 mb-0">
+            {{ subtitle }}
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Page Content -->
+<section class="page-content">
+  <div class="container">
+    <div class="row justify-content-center animate delay-1">
+      <div class="col-md-8">
+
+        <div class="content-body">
+          {{ page.content|linebreaks }}
+          <div class="section-divider">
+            <svg viewBox="0 0 200 20" xmlns="http://www.w3.org/2000/svg">
+            <line x1="0" y1="10" x2="200" y2="10" stroke="#9ca3af" stroke-width="2" />
+            </svg>
+        </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Soft CTA -->
+<section class="page-content bg-light text-center">
+  <h4 class="fw-bold">Let us support your teaching journey</h4>
+  <p class="text-muted mt-2">
+    Behind-the-scenes content support designed for serious educators.
+  </p>
+  <a href="/contact/" class="btn btn-warning mt-2">Get in Touch</a>
+</section>
+
+{% endblock %}

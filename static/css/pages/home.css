@@ -1,0 +1,32 @@
+/* Subtle premium background for sections */
+.bg-soft-gradient {
+    background:
+      radial-gradient(
+        circle at top left,
+        rgba(245, 158, 11, 0.08),
+        transparent 60%
+      ),
+      radial-gradient(
+        circle at bottom right,
+        rgba(31, 41, 51, 0.06),
+        transparent 60%
+      );
+  }
+
+  .bg-editorial {
+    background: linear-gradient(
+      180deg,
+      #ffffff 0%,
+      #f8fafc 50%,
+      #ffffff 100%
+    );
+  }
+  .bg-soft-gradient::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url("/static/images/noise.png");
+    opacity: 0.02;
+    pointer-events: none;
+  }
+  

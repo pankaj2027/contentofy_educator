@@ -1,0 +1,23 @@
+/* Exam cards – premium version */
+
+.exam-section {
+    padding: 70px 0;
+    background: #f9fafb;
+  }
+  
+  .exam-card {
+    background: #ffffff;
+    border-radius: 18px;
+    padding: 22px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1rem;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+    transition: all 0.25s ease;
+  }
+  
+  .exam-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 14px 30px rgba(0,0,0,0.12);
+  }
+  

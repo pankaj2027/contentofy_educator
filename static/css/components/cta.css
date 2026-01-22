@@ -1,0 +1,37 @@
+/* CTA Section */
+.cta-section {
+    background: linear-gradient(
+      135deg,
+      #1f2933 0%,
+      #111827 100%
+    );
+    padding: 80px 0;
+    color: #ffffff;
+  }
+  
+  .cta-title {
+    font-size: 2.4rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+  }
+  
+  .cta-subtitle {
+    font-size: 1.1rem;
+    color: #d1d5db;
+    margin-bottom: 30px;
+  }
+  
+  .btn-accent {
+    background: #f59e0b;
+    color: #000;
+    padding: 14px 36px;
+    border-radius: 12px;
+    font-weight: 600;
+    transition: all 0.25s ease;
+  }
+  
+  .btn-accent:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 30px rgba(245, 158, 11, 0.35);
+  }
+  
